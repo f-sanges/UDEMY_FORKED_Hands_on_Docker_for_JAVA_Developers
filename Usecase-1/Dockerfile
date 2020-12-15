@@ -6,7 +6,7 @@ FROM httpd:latest
 #Author of the Docker File
 # MAINTAINER Pictolearn Note: MAINTAINER has been deprecated for LABEL, 
 # LABEL is a key value pair
-LABEL "Maintainer"="Pictolearn"
+LABEL "Maintainer"="f-sanges"
 
 # Copy the following directory
 COPY pictolearn-sample/ /usr/local/apache2/htdocs/pictolearn

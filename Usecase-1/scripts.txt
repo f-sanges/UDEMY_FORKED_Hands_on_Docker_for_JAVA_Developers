@@ -14,18 +14,18 @@ docker images
 docker inspect <image-id>
 
 #Step 4: Running a container from the image
-#Syntax: docker run -itd --name <container-name> -p <host-port>:<port in container> image-name:tag
+#Syntax: docker run -d --name <container-name> -p <host-port>:<port in container> image-name:tag
 # note in the above syntax:
 # -d : represents (detached mode), note that if you dont run this in detached mode, the life of the container will be the life of the terminal in which you are executing it.
 # -p : represents the host-port to container-port mapping, if you substitute it with -P you will get a random port allocated by docker
 # --name : represents the name of the container 
 -------------------------------------------------------------------
-docker run -itd --name my-http-container-1 -p 5555:80 my-httpd:latest
-docker run -itd --name my-http-container-2 -p 5556:80 my-httpd:latest
-docker run -itd --name my-http-container-with-random-port -P my-httpd:latest
+docker run -d --name my-http-container-1 -p 5555:80 my-httpd:latest
+docker run -d --name my-http-container-2 -p 5556:80 my-httpd:latest
+docker run -d --name my-http-container-with-random-port -P my-httpd:latest
 
 #note if you run this it will NOT run in detached mode.
-docker run -it --name my-http-container-not-detached-mode -p 5557:80 my-httpd:latest
+docker run --name my-http-container-not-detached-mode -p 5557:80 my-httpd:latest
 
 Step 5: View all the containers
 -------------------------------------------------------------------
