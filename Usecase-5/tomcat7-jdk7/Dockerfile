@@ -8,9 +8,7 @@
 FROM ubuntu:16.04
 
 #Author of the Docker File
-# MAINTAINER Pictolearn Note: MAINTAINER has been deprecated for LABEL, 
-# LABEL is a key value pair 
-LABEL "Maintainer"="Pictolearn"
+LABEL "Maintainer"="f-sanges"
 
 #Download the latest version of 7.x
 #Verify the version exists here or else change it: http://apache.rediris.es/tomcat/tomcat-7
